@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      dom
+    </title>
+  </head>
+  <body>
+    <button>Hello</button>
+    <button class="js-button">Second button</button>
+    <script>
+    /*  document.body.innerHTML = 'Hello';
+      document.title = 'Goodbye'; 
+      console.log(document.title);
+      console.log(document.body.innerHTML);
+      console.log(typeof document.body);
+      */
+      const button = document.querySelector('button');
+      console.log(button.innerHTML = 'Click here');
+
+      button.addEventListener('click', function() {
+        console.log('Button clicked');
+        button.innerHTML = 'Clicked!';
+      });
+
+      const secondButton = document.querySelector('.js-button');
+      secondButton.addEventListener('click', function() {
+        console.log('Second button clicked');
+        secondButton.innerHTML = 'Second button clicked!';
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ojects</title>
+  </head>
+  <body>
+
+    <script>
+      const product = {
+        name: 'Laptop',
+        price: 1500,
+        description: 'High-end laptop with 16GB RAM',
+        stock: 50,
+        image: 'laptop.jpg',
+        category: 'Electronics',
+        isInStock: true,
+        ratings:{
+          average: 4.5,
+          total: 20,
+          reviews: [
+            {rating: 5, comment: 'Great product!'},
+            {rating: 3, comment: 'Not bad, but could be better.'},
+            {rating: 4, comment: 'Pretty good.'}
+          ]
+        }
+      }
+
+      console.log(product);
+      /*
+      console.log(`The ${product.name} costs $${product.price}`);
+      
+      console.log(`The ${product.name} has ${product.stock} in stock`);
+      
+      console.log(`The ${product.name} is ${product.isInStock? 'in stock' : 'out of stock'}`);
+      
+      // Javascript object to json representation
+      const jsonString = JSON.stringify(product);
+      console.log(jsonString);
+      
+      // json representation to javascript object
+      const parsedProduct = JSON.parse(jsonString);
+      console.log(parsedProduct);
+      
+      // localStorage ojects are used to store objects permanently. It supports only strings
+      localStorage.setItem('product', jsonString);
+      
+      // retrieve stored object
+      const storedProduct = JSON.parse(localStorage.getItem('product'));
+      console.log(storedProduct);
+      */
+      console.log('Salutation'.length);
+      console.log('Salutation'.toUpperCase());
+
+     // const name = product.name;
+      const {name, price} = product;
+      console.log(name, price);
+    </script>
+  </body>
+</html>
